@@ -1,0 +1,432 @@
+.main{
+    width: 100%;
+    background-image: url('https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .top{
+        width:65% ;
+        height: 60vh;
+        background-color: #a3d7fc;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+         @media screen and (max-width: 2550px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 1175px) {
+            height: 50vh;
+        }
+        @media screen and (max-width: 940px) {
+            flex-direction: column;
+            height: 80vh;
+            
+        }
+        @media screen and (max-width: 700px) {
+            width: 90%;
+            height: 100vh;
+        }
+        @media screen and (max-width: 472px) {
+            height: 80vh;
+        }
+        @media screen and (max-width: 390px) {
+            width: 98%;
+        }
+        .picture{
+            width: 48%;
+            height: 95%;
+            box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             @media screen and (max-width:850px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 650px) {
+                width: 70%;
+            }
+            @media screen and (max-width: 472px) {
+                width: 300px;
+                height: 400px;
+               
+            }
+            .display{
+                width: 97%;
+                height: 97%;
+                border-radius: 10px;
+                .carousel{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    .carousel-inner{
+                        width: 100%;
+                         height: 100%;
+                         border-radius: 10px;
+                    .carousel-item{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                       img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                       }
+                    }
+                    }
+                }
+            }
+        }
+        .detals{
+            width: 48%;
+            height: 95%;
+            box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+             @media screen and (max-width: 940px) {
+                width: 90%;
+            }
+            .up{
+                width: 98%;
+                height: 10%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+                border-radius: 10px;
+                background-image: url('https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png');
+                .price{
+                    display: flex;
+                    gap: 3px;
+                    height: 100%;
+                    align-items: center;
+                    p{
+                        margin: 0px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #0071c2;
+                    }
+                    i{
+                        color:#0071c2 ;
+                        margin-left: 5px;
+                    }
+                }
+                .like{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        margin: 0px;
+                        user-select: none;
+                        margin-right: 8px;
+              
+                        i {
+                          color: black;
+                        }
+              
+                        i:hover {
+                          color: red;
+                          transition: 1s ease;
+                        }
+              
+                        i.reacted {
+                          color: red;
+                        }
+              
+                        i.no-animation:hover {
+                          color: black;
+                        }
+                    }
+                }
+            }
+            .down{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 98%;
+                height: 30%;
+                box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+                border-radius: 10px;
+                background-image: url('https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png');
+                @media screen and (max-width: 940px) {
+                    height: 50%;
+                }
+                .left{
+                    height: 93%;
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    @media screen and (max-width: 472px) {
+                        width: 50%;
+                    }
+                    .floor{
+                        display: flex;
+                        align-items: center;
+                         border-radius: 10px;
+                         box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+                         background-color: #a3d7fc;
+                         img{
+                            width: 30px;
+                             height: 30px;
+                        }
+                        label{
+                             font-size: 15px;
+                             color: #0071c2;
+                             margin: 0px;
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             font-weight: 600;
+                        }
+                        p{
+                            margin: 0px;
+                            font-size: 15px;
+                            color: #0071c2;
+                            font-weight: 600;
+                        }
+                    }
+                    .one{
+                        display: flex;
+                        align-items: center;
+                        border-radius: 10px;
+                        box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+                        background-color: #a3d7fc;
+                        .m2{
+                            display: flex;
+                            align-items: center;
+                            border-right: 1px solid #0071c2;
+                            label{
+                                font-size: 15px;
+                                color: #0071c2;
+                                margin-bottom: 3px;
+                                width: 30px;
+                                height: 30px;
+                                margin: 0px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+    
+                            }
+                            p{
+                                margin: 0px;
+                                font-size: 15px;
+                                color: #0071c2;
+                                margin-left: 5px;
+                                font-weight: 600;
+                            }        
+                        }
+                        .rooms{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 5px;
+                            label{
+                                font-size: 15px;
+                                color: #0071c2;
+                                margin: 0px;
+                                font-weight: 600;
+                            }
+                            p{
+                                margin: 0px;
+                                font-size: 15px;
+                                color: #0071c2;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .bedroom{
+                        display: flex;
+                        align-items: center;
+                         border-radius: 10px;
+                         box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+                         background-color: #a3d7fc;
+                         label{
+                            font-size: 15px;
+                            color: #0071c2;
+                            margin: 0px;
+                            font-weight: 600;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                       }
+                       p{
+                           margin: 0px;
+                           font-size: 15px;
+                           color: #0071c2;
+                           margin-left: 5px;
+                           font-weight: 600;
+                       }
+                    }
+                    
+                }
+                .right{
+                    height: 93%;
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    @media screen and (max-width: 472px) {
+                        width: 50%;
+                    }
+                    .waterspots{
+                        width: 70%;
+                        display: flex;
+                        align-items: center;
+                         border-radius: 10px;
+                         box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+                         background-color: #a3d7fc;
+                         @media screen and (max-width: 350px) {
+                            width: 90%;
+                        }
+                         label{
+                            font-size: 15px;
+                            color: #0071c2;
+                            margin: 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                            font-weight: 600;
+                       }
+                       p{
+                           margin: 0px;
+                           font-size: 15px;
+                           color: #0071c2;
+                           margin-left: 5px;
+                           font-weight: 600;
+                       }
+                    }
+                    .pool{
+                        width: 70%;
+                        display: flex;
+                        align-items: center;
+                         border-radius: 10px;
+                         box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+                         background-color: #a3d7fc;
+                         @media screen and (max-width: 350px) {
+                            width: 90%;
+                        }
+                         label{
+                            font-size: 15px;
+                            color: #0071c2;
+                            margin: 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                            font-weight: 600;
+                       }
+                       p{
+                           margin: 0px;
+                           font-size: 15px;
+                           color: #0071c2;
+                           margin-left: 5px;
+                           font-weight: 600;
+                       }
+                    }
+                    .parking{
+                        width: 70%;
+                        display: flex;
+                        align-items: center;
+                         border-radius: 10px;
+                         box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+                         background-color: #a3d7fc;
+                         @media screen and (max-width: 350px) {
+                            width: 90%;
+                        }
+                         label{
+                            font-size: 15px;
+                            color: #0071c2;
+                            margin: 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                            font-weight: 600;
+                       }
+                       p{
+                           margin: 0px;
+                           font-size: 15px;
+                           color: #0071c2;
+                           margin-left: 5px;
+                           font-weight: 600;
+                       }
+                    }
+                }
+            }
+            .back{
+                width: 98%;
+                height: 50%;
+                box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                background-image: url('https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png');
+                @media screen and (max-width: 940px) {
+                    height: 30%;
+                }
+                
+                button{
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                     @media screen and (max-width: 1005px) {
+                            font-size: 12px;
+                        }
+                        @media screen and (max-width: 940px) {
+                            font-size: 12px;
+                        }
+                }
+
+            }
+        }
+    }
+    .bottom{
+        width: 65%;
+        min-height: 80px;
+        background-color:#a3d7fc ;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        @media screen and (max-width: 940px) {
+            width: 90%;
+        }
+        .service{
+            width: 95%;
+            background-color: white;
+            border-radius: 10px;
+            min-height: 40px;
+             box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            margin-bottom: 10px;
+            p{
+                margin: 0px;
+                font-size: 15px;
+                color: #0071c2;
+            }
+        }
+        label{
+            font-size: 16px;
+            color: #0071c2;
+            font-weight: 600;
+        }
+    }
+}

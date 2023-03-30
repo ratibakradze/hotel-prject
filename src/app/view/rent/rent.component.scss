@@ -1,0 +1,14 @@
+.main{
+    width: 100%;
+    min-height: calc(100vh - 90px - 30vh);
+    background-image: url('https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box{
+        width: 500px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}

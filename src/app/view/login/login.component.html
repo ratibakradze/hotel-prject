@@ -1,0 +1,30 @@
+<section>
+  <article>
+    <div class="mb-3">
+      <label class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        aria-describedby="emailHelp"
+        [(ngModel)]="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" [(ngModel)]="password" />
+    </div>
+    <div class="mb-3">
+      <a routerLink="/reset-password" class="form-text reset">Reset password</a>
+    </div>
+    <div class="google-btn" (click)="signInWithGoogle()">
+      <div class="google-icon-wrapper">
+        <img
+          class="google-icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+        />
+      </div>
+      <p class="btn-text"><b>Sign in with google</b></p>
+    </div>
+    <button class="btn btn-primary" (click)="login()">Login</button>
+  </article>
+</section>

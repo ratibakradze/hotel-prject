@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hotel-project-531e6": {
+      "hosting": {
+        "test": [
+          "hotel-project-531e6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hotel-project-531e6"
+  }
+}

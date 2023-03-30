@@ -1,0 +1,73 @@
+$white: #fff;
+$google-blue: #4285f4;
+$button-active-blue: #1669F2;
+
+section {
+  width: 100%;
+  height: calc(100vh - 90px - 30vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+  article {
+    width: 50%;
+    min-width: 280px;
+    max-width: 700px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #e4f4ff; 
+    border-radius: 10px;
+
+    a.reset {
+      text-decoration: none;
+    }
+
+    .google-btn {
+      width: 184px;
+      height: 42px;
+      background-color: $google-blue;
+      border-radius: 2px;
+      box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+      .google-icon-wrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $white;
+      }
+      .google-icon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 18px;
+        height: 18px;
+      }
+      .btn-text {
+        float: right;
+        margin: 11px 11px 0 0;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        font-family: "Roboto";
+      }
+      &:hover {
+        box-shadow: 0 0 6px $google-blue;
+      }
+      &:active {
+        background: $button-active-blue;
+      }
+    }
+
+    button.btn-primary {
+      margin-top: 15px;
+    }
+  }
+}

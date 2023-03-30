@@ -1,0 +1,73 @@
+<section class="main">
+  <article class="top">
+    <div class="liner"></div>
+    <div class="header">
+      <p>Holel Pages</p>
+    </div>
+    <div class="liner"></div>
+  </article>
+  <article class="bottom">
+    <aside class="card" *ngFor="let hotelcard of cardsArray">
+      <div class="picture">
+        <img
+          [src]="hotelcard.image[0] ? hotelcard.image[0] : defaultImage"
+          class="card-img-top"
+          alt="..."
+        />
+      </div>
+      <div class="information">
+        <div class="up">
+          <div class="name">
+            <p>{{ hotelcard.title }}</p>
+          </div>
+          <div class="like">
+            <p>
+              {{
+                hotelcard.reactionUserids.length === 0
+                  ? ""
+                  : hotelcard.reactionUserids.length
+              }}
+              <i
+                #heart
+                [ngClass]="{
+                  reacted: isUserReacted(hotelcard),
+                  'no-animation': !isUserAuthorized
+                }"
+                (click)="reactCard(hotelcard, heart)"
+                class="fa-solid fa-heart"
+              ></i>
+            </p>
+          </div>
+        </div>
+        <div class="down">
+          <div class="left">
+            <div class="email">
+              <label for="email" class="form-label"> Email:</label>
+              <p>{{ hotelcard.email }}</p>
+            </div>
+            <div class="phone">
+              <label for="phone" class="form-label">Phone:</label>
+              <p>{{ hotelcard.phone }}</p>
+            </div>
+            <div class="update" *ngIf="checkCurrentUser(hotelcard)">
+              <a routerLink="/update-hotel/{{ hotelcard.id }}">Update card</a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="rate">
+              <p>{{ hotelcard.star }}</p>
+            </div>
+            <div class="view">
+              <button
+                class="btn btn-primary"
+                routerLink="/hotel-page/{{ hotelcard.id }}"
+              >
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </article>
+</section>

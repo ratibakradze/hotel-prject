@@ -1,0 +1,148 @@
+.main{
+    width: 100%;
+    height: 80vh;
+    min-height: calc(100vh - 90px - 30vh);
+    background-image: url('https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @media screen and (max-width: 835px) {
+        height: 110vh;
+     }
+    .top{
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+        background-color: #a3d7fc; 
+        margin-top: 10px;
+        gap: 10px;
+        @media screen and (max-width: 835px) {
+           flex-direction: column;
+         }
+         @media screen and (max-width: 950px) {
+            height: 70%;
+         }
+         @media screen and (max-width: 535px) {
+           width: 90%;
+         }
+        .left{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            @media screen and (max-width: 835px) {
+                width:80%;
+             }
+             label{
+                color: #0071c2;
+                margin: 0px;
+             }
+             p{
+                font-size: 13px;
+                    margin: 0px;
+                    color: blue;
+             }
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            @media screen and (max-width: 835px) {
+               width: 80%;
+             }
+
+            .display{
+                width: 65%;
+                height: 70%;
+                border-radius: 10px;
+                @media screen and (max-width: 950px) {
+                    height: 60%;
+                 }
+                .carousel{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    .carousel-inner{
+                        width: 100%;
+                         height: 100%;
+                         border-radius: 10px;
+                    .carousel-item{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                       img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                       }
+                    }
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        width: 60%;
+        height: 22%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+        background-color: #a3d7fc; 
+        @media screen and (max-width: 835px) {
+            flex-direction: column;
+         }
+         @media screen and (max-width: 535px) {
+            width: 90%;
+         }
+
+         label{
+            color: #0071c2;
+            margin: 0px;
+         }
+         p{
+            font-size: 13px;
+                    margin: 0px;
+                    color: blue;
+         }
+        
+        .textarea{
+            width: 60%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            @media screen and (max-width: 835px) {
+               width: 90%;
+             }
+            
+        }
+        .button{
+            width: 30%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media screen and (max-width: 835px) {
+                height: 100%;
+             }
+            
+        }
+
+    }
+}

@@ -1,0 +1,16 @@
+.active {
+    color: red !important;
+  }
+.navbar{
+    background-color: #4c0bce;
+    .container-fluid  a{
+        color: white;
+    }
+    .collapse{
+        flex-direction: row-reverse;
+
+        a{
+            color: white;
+        }
+    }
+}

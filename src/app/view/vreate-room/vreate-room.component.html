@@ -1,0 +1,182 @@
+<section class="main">
+  <article class="top">
+    <aside class="left">
+      <div class="one">
+        <div class="m2">
+          <label for="m2" class="form-label">m2:</label>
+          <input type="text" class="form-control" [(ngModel)]="roomcard.m2" />
+          <p *ngIf="roomError.m2Error != ''">
+            {{ roomError.m2Error }}
+          </p>
+        </div>
+        <div class="floor">
+          <label for="floor" class="form-label">Floor:</label>
+          <input class="form-control" [(ngModel)]="roomcard.floor" />
+          <p *ngIf="roomError.floorError != ''">
+            {{ roomError.floorError }}
+          </p>
+        </div>
+        <div class="rooms">
+          <label for="rooms" class="form-label">Rooms:</label>
+          <input class="form-control" [(ngModel)]="roomcard.rooms" />
+          <p *ngIf="roomError.roomsError != ''">
+            {{ roomError.roomsError }}
+          </p>
+        </div>
+        <div class="bedroom">
+          <label for="bedroom" class="form-label">Bedroom:</label>
+          <input class="form-control" [(ngModel)]="roomcard.bedroom" />
+          <p *ngIf="roomError.bedroomError != ''">
+            {{ roomError.bedroomError }}
+          </p>
+        </div>
+      </div>
+      <div class="two">
+        <div class="waterspots">
+          <label for="waterspots" class="form-label">Water Spots:</label>
+          <input class="form-control" [(ngModel)]="roomcard.waterspot" />
+          <p *ngIf="roomError.waterspotError != ''">
+            {{ roomError.waterspotError }}
+          </p>
+        </div>
+        <div class="pool">
+          <label for="pool" class="form-label">Pool:</label>
+          <select class="form-control" [(ngModel)]="roomcard.pool">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <p *ngIf="roomError.poolError != ''">
+            {{ roomError.poolError }}
+          </p>
+        </div>
+        <div class="parking">
+          <label for="parking" class="form-label">Parking:</label>
+          <select class="form-control" [(ngModel)]="roomcard.parking">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <p *ngIf="roomError.parkingError != ''">
+            {{ roomError.parkingError }}
+          </p>
+        </div>
+        <div class="price">
+          <label for="price" class="form-label">Price:</label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="roomcard.price"
+          />
+          <p *ngIf="roomError.priceError != ''">
+            {{ roomError.priceError }}
+          </p>
+        </div>
+      </div>
+    </aside>
+    <aside class="right">
+      <div class="display">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                [src]="roomcard.image[0] ? roomcard.image[0] : defaultImage"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                [src]="roomcard.image[1] ? roomcard.image[1] : defaultImage"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                [src]="roomcard.image[2] ? roomcard.image[2] : defaultImage"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                [src]="roomcard.image[3] ? roomcard.image[3] : defaultImage"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="picture">
+        <input
+          multiple="multiple"
+          accept="image/png,image/jpg,image/jpeg"
+          type="file"
+          class="form-control"
+          (change)="onChange($event)"
+        />
+      </div>
+    </aside>
+  </article>
+  <article class="bottom">
+    <div class="textarea">
+      <label for="aboutservice" class="form-label">About Service:</label>
+      <textarea
+        class="form-control"
+        [(ngModel)]="roomcard.description"
+      ></textarea>
+      <p *ngIf="roomError.ServiceError != ''">
+        {{ roomError.ServiceError }}
+      </p>
+    </div>
+    <div class="button">
+      <button class="btn btn-primary" (click)="addRoom()">Add Room</button>
+    </div>
+  </article>
+</section>
